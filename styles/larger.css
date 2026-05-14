@@ -1,0 +1,51 @@
+/* === larger.css — larger screen overrides === */
+
+@media (min-width: 640px) {
+
+  /* Hide hamburger, show nav horizontally */
+  #hamburger {
+    display: none;
+  }
+
+  #primary-nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  #primary-nav ul {
+    flex-direction: row;
+    gap: 1.5rem;
+    padding-top: 0;
+  }
+
+  /* Intro: side-by-side layout */
+  .intro-section {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .student-photo {
+    flex: 0 0 220px;
+  }
+
+  /* Course grid: 2 columns */
+  .course-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Footer: horizontal row */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}
+
+@media (min-width: 900px) {
+
+  /* Course grid: 3 columns */
+  .course-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

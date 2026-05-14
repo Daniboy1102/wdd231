@@ -1,0 +1,329 @@
+/* === small.css — mobile-first base styles === */
+
+:root {
+  --primary: #1a5276;
+  --accent: #2980b9;
+  --bg: #f0f4f8;
+  --white: #ffffff;
+  --text: #222222;
+  --text-muted: #555555;
+  --completed: #1e8449;
+  --font: 'Lato', sans-serif;
+  --font-heading: 'Cinzel', serif;
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --radius: 6px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.header-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.site-name {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: 0.04em;
+}
+
+#hamburger {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  color: var(--white);
+  font-size: 1.3rem;
+  padding: 0.2rem 0.6rem;
+  cursor: pointer;
+  border-radius: var(--radius);
+  transition: border-color 0.2s;
+}
+
+#hamburger:hover {
+  border-color: var(--white);
+}
+
+/* NAV — hidden on small screens */
+#primary-nav {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+#primary-nav.open {
+  max-height: 200px;
+}
+
+#primary-nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 0.5rem;
+}
+
+#primary-nav a {
+  display: block;
+  padding: 0.5rem 0;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+}
+
+#primary-nav a:hover {
+  color: var(--white);
+}
+
+#primary-nav a.active {
+  color: var(--white);
+  font-weight: 700;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+}
+
+/* MAIN */
+main {
+  padding: 2rem 1.25rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  letter-spacing: 0.03em;
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+  letter-spacing: 0.02em;
+}
+
+section {
+  margin-bottom: 2.5rem;
+}
+
+p {
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+
+/* INTRO SECTION */
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  padding: 1.5rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.student-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.student-photo h2 {
+  width: 100%;
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.5rem;
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.student-photo img {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  background-color: #ccc;
+  display: block;
+}
+
+/* COURSES SECTION */
+.courses-section h2 {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius) var(--radius) 0 0;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 0.4rem 1.2rem;
+  border: 2px solid var(--accent);
+  background: var(--white);
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.9rem;
+  border-radius: var(--radius);
+  font-family: var(--font);
+  font-weight: 600;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+.filter-btn:hover {
+  background: var(--accent);
+  color: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-btn.active {
+  background: var(--accent);
+  color: var(--white);
+  box-shadow: var(--shadow-sm);
+}
+
+/* COURSE CARDS */
+.course-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.course-card {
+  background: var(--white);
+  border: 2px solid #d5dde5;
+  padding: 0.8rem 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.course-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.course-card.completed {
+  border-color: var(--completed);
+  background: #eafaf1;
+}
+
+.course-code {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.course-card.completed .course-code {
+  color: var(--completed);
+}
+
+/* CREDIT TOTAL */
+.credit-total {
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 1.25rem 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 2rem;
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.footer-social a:hover {
+  color: var(--white);
+}
+
+.footer-social svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-info p,
+.footer-modified p {
+  font-size: 0.82rem;
+  color: rgba(255, 255, 255, 0.75);
+}
