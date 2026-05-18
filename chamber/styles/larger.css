@@ -1,0 +1,64 @@
+/* === chamber/styles/larger.css — larger screen overrides === */
+
+@media (min-width: 640px) {
+  #hamburger {
+    display: none;
+  }
+
+  #primary-nav {
+    width: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
+  #primary-nav ul {
+    flex-direction: row;
+    padding-top: 0;
+    gap: 1.5rem;
+  }
+
+  .directory-hero {
+    padding: 2.5rem 2rem;
+  }
+
+  .directory-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .member-list-item img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .list-info {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.3rem 1rem;
+  }
+
+  .list-info h2 {
+    min-width: 160px;
+  }
+
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 2rem 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  main {
+    padding: 2rem 2.5rem;
+  }
+
+  .members-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

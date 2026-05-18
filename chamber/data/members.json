@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Sonangol E.P.",
+    "address": "Rua Rainha Ginga, 29-35, Luanda",
+    "phone": "+244 222 334 567",
+    "website": "https://www.sonangol.co.ao",
+    "image": "sonangol.png",
+    "membershipLevel": 3,
+    "description": "Angola's national oil and gas company driving energy exploration and production since 1976.",
+    "email": "info@sonangol.co.ao",
+    "category": "Energy"
+  },
+  {
+    "name": "Unitel S.A.",
+    "address": "Rua Guilherme Pereira Inglês, 10, Luanda",
+    "phone": "+244 222 400 000",
+    "website": "https://www.unitel.ao",
+    "image": "unitel.png",
+    "membershipLevel": 3,
+    "description": "Angola's largest telecommunications provider with mobile, data, and enterprise solutions nationwide.",
+    "email": "contacto@unitel.ao",
+    "category": "Telecommunications"
+  },
+  {
+    "name": "Banco BIC",
+    "address": "Av. 4 de Fevereiro, 86, Luanda",
+    "phone": "+244 222 693 000",
+    "website": "https://www.bancobic.ao",
+    "image": "bic.jpg",
+    "membershipLevel": 3,
+    "description": "One of Angola's premier commercial banks offering comprehensive financial services to individuals and businesses.",
+    "email": "info@bancobic.ao",
+    "category": "Finance"
+  },
+  {
+    "name": "Refriango",
+    "address": "Rua das Missões, 76, Luanda",
+    "phone": "+244 222 701 200",
+    "website": "https://www.refriango.com",
+    "image": "refri.jpg",
+    "membershipLevel": 2,
+    "description": "Angola's leading soft drinks and water bottling company, producing popular local brands since 2002.",
+    "email": "geral@refriango.ao",
+    "category": "Food & Beverage"
+  },
+  {
+    "name": "Hotel Intercontinental Luanda",
+    "address": "Rua Major Kanhangulo, Luanda",
+    "phone": "+244 222 694 000",
+    "website": "https://www.ihg.com",
+    "image": "ihl.png",
+    "membershipLevel": 2,
+    "description": "Luanda's premier luxury hotel offering world-class accommodations, dining, and conference facilities.",
+    "email": "luanda@intercontinental.com",
+    "category": "Hospitality"
+  },
+  {
+    "name": "DSTV Angola",
+    "address": "Rua Ndunduma, 25, Luanda",
+    "phone": "+244 222 408 000",
+    "website": "https://www.dstvafrica.com",
+    "image": "dstv.png",
+    "membershipLevel": 2,
+    "description": "Providing satellite television and digital entertainment services across Angola through DStv.",
+    "email": "angola@multichoice.com",
+    "category": "Media & Entertainment"
+  },
+  {
+    "name": "TAAG Angola Airlines",
+    "address": "Aeroporto Internacional 4 de Fevereiro, Luanda",
+    "phone": "+244 222 320 290",
+    "website": "https://www.taag.com",
+    "image": "taag.jpg",
+    "membershipLevel": 1,
+    "description": "Angola's national carrier connecting Luanda to destinations across Africa, Europe, and South America.",
+    "email": "info@taag.com",
+    "category": "Aviation"
+  },
+  {
+    "name": "Kero Hipermercados",
+    "address": "Centro Comercial Belas Shopping, Luanda",
+    "phone": "+244 222 441 500",
+    "website": "https://www.instagram.com/hipermercadokero?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+    "image": "kero.png",
+    "membershipLevel": 1,
+    "description": "Angola's largest supermarket chain with multiple locations offering fresh produce and household goods.",
+    "email": "servicos@kero.ao",
+    "category": "Retail"
+  }
+]

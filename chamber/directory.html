@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Browse member businesses of the Luanda Chamber of Commerce. Find local services, contacts, and resources for businesses in Luanda, Angola." />
+  <meta name="author" content="Daniel Venancio" />
+  <title>Member Directory | Luanda Chamber of Commerce</title>
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Member Directory | Luanda Chamber of Commerce" />
+  <meta property="og:description" content="Browse member businesses of the Luanda Chamber of Commerce. Find local services, contacts, and resources for businesses in Luanda, Angola." />
+  <meta property="og:image" content="https://daniboy1102.github.io/wdd231/chamber/images/favicon.svg" />
+  <meta property="og:url" content="https://daniboy1102.github.io/wdd231/chamber/directory.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.svg" alt="Luanda Chamber of Commerce logo" class="chamber-logo" />
+      <div class="brand-text">
+        <span class="site-name">Luanda Chamber</span>
+        <span class="site-tagline">of Commerce</span>
+      </div>
+    </div>
+    <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="directory-hero">
+      <h1>Member Directory</h1>
+      <p>Explore the businesses that make Luanda thrive.</p>
+    </section>
+
+    <section class="directory-controls" aria-label="View options">
+      <div class="view-toggle">
+        <button id="grid-btn" class="view-btn active" aria-label="Grid view" title="Grid view">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 3h7v7H3V3zm0 11h7v7H3v-7zm11-11h7v7h-7V3zm0 11h7v7h-7v-7z"/>
+          </svg>
+        </button>
+        <button id="list-btn" class="view-btn" aria-label="List view" title="List view">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M3 4h2v2H3V4zm4 0h14v2H7V4zm-4 7h2v2H3v-2zm4 0h14v2H7v-2zm-4 7h2v2H3v-2zm4 0h14v2H7v-2z"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <div id="members-display" class="members-grid"></div>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h3>Luanda Chamber of Commerce</h3>
+      <p>Rua Rainha Ginga, 45, Luanda, Angola</p>
+      <p>+244 222 100 200</p>
+      <p>info@luandachamber.ao</p>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce</p>
+      <p>Daniel Venancio &bull; WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>
