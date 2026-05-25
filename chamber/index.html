@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Welcome to the Luanda Chamber of Commerce — supporting business growth and economic development in Luanda, Angola." />
+  <meta name="author" content="Daniel Venancio" />
+  <title>Home | Luanda Chamber of Commerce</title>
+
+  <!-- Facebook Open Graph -->
+  <meta property="og:title" content="Home | Luanda Chamber of Commerce" />
+  <meta property="og:description" content="Welcome to the Luanda Chamber of Commerce — supporting business growth and economic development in Luanda, Angola." />
+  <meta property="og:image" content="https://daniboy1102.github.io/wdd231/chamber/images/favicon.svg" />
+  <meta property="og:url" content="https://daniboy1102.github.io/wdd231/chamber/index.html" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/home.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.svg" alt="Luanda Chamber of Commerce logo" class="chamber-logo" />
+      <div class="brand-text">
+        <span class="site-name">Luanda Chamber</span>
+        <span class="site-tagline">of Commerce</span>
+      </div>
+    </div>
+    <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="home-hero" aria-label="Welcome banner">
+      <div class="hero-content">
+        <h1>Grow Your Business in Luanda</h1>
+        <p>Connecting Angola's capital with the resources, partnerships, and community needed to thrive.</p>
+      </div>
+    </section>
+
+    <!-- side by side-->
+    <div class="home-grid">
+
+      <section class="home-events" aria-label="Current Events">
+        <h2 class="section-title">Current Events</h2>
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-day">12</span>
+            <span class="event-month">JUN</span>
+          </div>
+          <div class="event-info">
+            <h3>Annual Business Summit 2025</h3>
+            <p>Join industry leaders at the Luanda Business Summit. Network, learn, and shape the future of commerce in Angola.</p>
+            <p class="event-meta">Intercontinental Hotel &bull; 9:00 AM – 5:00 PM</p>
+          </div>
+        </article>
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-day">25</span>
+            <span class="event-month">JUN</span>
+          </div>
+          <div class="event-info">
+            <h3>SME Financing Workshop</h3>
+            <p>Learn about financing options for small and medium enterprises, including new government-backed programs.</p>
+            <p class="event-meta">Chamber Conference Room &bull; 10:00 AM – 1:00 PM</p>
+          </div>
+        </article>
+        <article class="event-card">
+          <div class="event-date">
+            <span class="event-day">07</span>
+            <span class="event-month">JUL</span>
+          </div>
+          <div class="event-info">
+            <h3>Tech &amp; Innovation Expo</h3>
+            <p>Discover the latest technologies transforming Angolan businesses. Live demos, keynotes, and networking opportunities.</p>
+            <p class="event-meta">Belas Shopping Center &bull; All Day</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="home-weather" aria-label="Local Weather">
+        <h2 class="section-title">Luanda Weather</h2>
+        <div id="weather-current" class="weather-current">
+          <p class="weather-loading">Loading weather data…</p>
+        </div>
+        <div id="weather-forecast" class="weather-forecast"></div>
+      </section>
+
+    </div>
+
+    <!-- SPOTLIGHTS -->
+    <section class="home-spotlights" aria-label="Member Spotlights">
+      <h2 class="section-title">Member Spotlights</h2>
+      <div id="spotlights-display" class="spotlights-grid">
+        <p class="weather-loading">Loading spotlights…</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h3>Luanda Chamber of Commerce</h3>
+      <p>Rua Rainha Ginga, 45, Luanda, Angola</p>
+      <p>+244 222 100 200</p>
+      <p>info@luandachamber.ao</p>
+    </div>
+
+    <div class="footer-info">
+      <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce</p>
+      <p>Daniel Venancio &bull; WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

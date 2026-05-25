@@ -61,4 +61,29 @@
   .members-grid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  /* HOME — 3-column spotlight row on wide screens */
+  .spotlights-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-hero {
+    padding: 5rem 2rem;
+  }
+}
+
+/* HOME — medium screens */
+@media (min-width: 640px) {
+  .hero-content h1 {
+    font-size: 2.4rem;
+  }
+
+  /* Events take up 3 parts, weather takes 2 */
+  .home-grid {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

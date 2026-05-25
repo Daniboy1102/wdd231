@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ES Modules - Course Enrollment</title>
+  <link rel="stylesheet" href="styles/modules.css" />
+</head>
+<body>
+  <header>
+    <h1 id="courseTitle"></h1>
+  </header>
+
+  <main>
+    <section>
+      <label for="sectionNumber">Section Number:</label>
+      <input type="number" id="sectionNumber" min="1" />
+      <button id="enrollStudent">Enroll</button>
+      <button id="dropStudent">Drop</button>
+    </section>
+
+    <section>
+      <h2>Sections</h2>
+      <div id="sections"></div>
+    </section>
+  </main>
+
+  <script type="module" src="scripts/modules.mjs"></script>
+</body>
+</html>
