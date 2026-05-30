@@ -704,7 +704,8 @@ footer {
   margin-top: 2rem;
 }
 
-footer h3 {
+footer h3,
+.footer-heading {
   font-family: var(--font-heading);
   font-size: 0.95rem;
   color: var(--accent);
