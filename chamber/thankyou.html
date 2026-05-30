@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Thank you for applying to the Luanda Chamber of Commerce. Your application has been received." />
+  <meta name="author" content="Daniel Venancio" />
+  <title>Thank You | Luanda Chamber of Commerce</title>
+
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&amp;family=Open+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/small.css" />
+  <link rel="stylesheet" href="styles/larger.css" />
+
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/thankyou.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-brand">
+      <img src="images/favicon.svg" alt="Luanda Chamber of Commerce logo" class="chamber-logo" />
+      <div class="brand-text">
+        <span class="site-name">Luanda Chamber</span>
+        <span class="site-tagline">of Commerce</span>
+      </div>
+    </div>
+    <button id="hamburger" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+    <nav id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html" class="active">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="thankyou-hero" aria-label="Thank you banner">
+      <h1>Thank You!</h1>
+      <p>Your membership application has been received. We will be in touch soon.</p>
+    </section>
+
+    <section class="submitted-info" aria-label="Application summary">
+      <h2>Application Summary</h2>
+      <div id="submitted-data">
+        <!-- Populated by thankyou.js from URL parameters -->
+      </div>
+      <a href="join.html" class="back-link">Submit Another Application</a>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <p class="footer-heading">Luanda Chamber of Commerce</p>
+      <p>Rua Rainha Ginga, 45, Luanda, Angola</p>
+      <p>+244 222 100 200</p>
+      <p>info@luandachamber.ao</p>
+    </div>
+    <div class="footer-info">
+      <p>&copy; <span id="currentyear"></span> Luanda Chamber of Commerce</p>
+      <p>Daniel Venancio &bull; WDD 231</p>
+      <p id="lastModified"></p>
+    </div>
+  </footer>
+
+</body>
+</html>

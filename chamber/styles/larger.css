@@ -82,3 +82,24 @@
     padding: 5rem 2rem;
   }
 }
+
+/* JOIN PAGE */
+@media (min-width: 640px) {
+  .join-layout {
+    grid-template-columns: 3fr 2fr;
+    align-items: start;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .level-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .thankyou-hero h1 {
+    font-size: 2.2rem;
+  }
+}
